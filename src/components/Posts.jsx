@@ -33,7 +33,7 @@ function Posts({ imgUrl, name, desc, location, time }) {
                 </div>
             </div>
             <div className="likes font-semibold pl-2 text-sm">4057 likes</div>
-            <div className="description"><span className='text-md font-semibold p-2'>uday_moto</span> { desc }</div>
+            <div className="description"><span className='text-md font-semibold p-2'>{ name }</span> { desc }</div>
             <div className="comment w-full border-b-2 border-gray-100 border-opacity-50">
                 <input className='w-full bg-inherit focus:outline-none p-2 text-sm' type="text" name="comment" id="" placeholder='Add a comment' />
             </div>
