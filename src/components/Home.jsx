@@ -4,7 +4,7 @@ import Menu from './Menu'
 import axios from 'axios'
 import Posts from './Posts'
 import InfiniteScroll from 'react-infinite-scroller';
-const apiURL = 'http://localhost:5000/post';
+const apiURL = 'https://instaclone-backend-rndh.onrender.com/post';
 import { BsGithub } from 'react-icons/bs'
 
 async function fetchIssues(url) {

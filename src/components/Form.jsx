@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
 import axios from 'axios';
-const apiURL = "http://localhost:5000/post";
+const apiURL = "https://instaclone-backend-rndh.onrender.com/post";
 function Form({ closeModal, setItems }) {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const [isLoading, setisLoading] = useState(false)
