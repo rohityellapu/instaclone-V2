@@ -2,23 +2,24 @@ import React from 'react'
 import { FiHeart, FiSend } from 'react-icons/fi'
 import { BiBookmark } from 'react-icons/bi'
 import { TbMessageCircle2 } from 'react-icons/tb';
+import PostTime from './PostTime';
 function Posts({ imgUrl, name, desc, location, time }) {
     return (
 
         <>
             <header className='w-full flex justify-between items-center p-2'>
                 <div className="names flex items-center">
-                    <div className="image"> <img className='h-8 w-8 rounded-full' src={ imgUrl }
+                    <div className="image"> <img className='h-10 w-10 rounded-full' src={ imgUrl }
                     /></div>
                     <div className="head flex flex-col p-2">
-                        <div className="name font-semibold">{ name }</div>
+                        <div className="name font-semibold flex flex-row justify-center"><span className='mr-1'>{ name }</span><span className='text-xs font-thin flex items-center justify-center'>. { <PostTime date={ time } /> }</span> </div>
                         <div className="place text-sm">{ location }</div>
                     </div>
                 </div>
                 <div className="options text-xl font-bold">...</div>
             </header>
-            <div className="image w-full h-[36rem]">
-                <img className='h-full w-full rounded-md border-2 border-gray-100 border-opacity-50' src={ imgUrl }
+            <div className="image w-full h-[36rem] flex justify-center items-center  rounded-md border-[1px] border-gray-100 border-opacity-50">
+                <img className='min-w-full max-h-full' src={ imgUrl }
                 />
             </div>
             <div className="icons flex justify-between">
@@ -43,29 +44,3 @@ function Posts({ imgUrl, name, desc, location, time }) {
 
 export default Posts
 
-/**
- * PostImage
-: 
-"https://res.cloudinary.com/dovkoy31j/image/upload/v1673790159/instaclone/pu9n1hk9dcyoxqoajrrw.png"
-createdAt
-: 
-"2023-01-15T13:42:39.590Z"
-description
-: 
-"Finally got it"
-location
-: 
-"Cambridge"
-name
-: 
-"Rohit"
-updatedAt
-: 
-"2023-01-15T13:42:39.590Z"
-__v
-: 
-0
-_id
-: 
-"63c402cfff0f914af9831d00"
- */
