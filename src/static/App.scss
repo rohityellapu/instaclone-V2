@@ -1,12 +1,19 @@
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
 }
 
-.flex-item {
-    width: 100px;
-    height: 100px;
-    background-color: lightblue;
-    margin-right: 10px;
+/* Track */
+::-webkit-scrollbar-track {
+    background: #101820FF;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(248, 247, 245);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(248, 247, 245);
 }
