@@ -18,7 +18,7 @@ function Posts({ imgUrl, name, desc, location, time }) {
                 </div>
                 <div className="options text-xl font-bold">...</div>
             </header>
-            <div className="image w-full h-[36rem] flex justify-center items-center  rounded-md border-[1px] border-gray-100 border-opacity-50">
+            <div className="image w-full h-[36rem] flex justify-center items-center  rounded-md md:border-[1px] border-gray-100 border-opacity-50">
                 <img className='min-w-full max-h-full' src={ imgUrl }
                 />
             </div>
