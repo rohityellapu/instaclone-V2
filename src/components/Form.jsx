@@ -71,7 +71,7 @@ function Form({ closeModal, setItems }) {
             </div>
             <div className="description">
 
-                <input autoComplete='off' className='bg-black w-full p-2 rounded-md border-none focus:outline-green-400' type="text" placeholder='Tell us something about' { ...register('description', { required: "Please describe it" }) } id="" />
+                <input autoComplete='off' className='bg-black w-full p-2 rounded-md border-none focus:outline-green-400' type="text" placeholder='Tell us something about it.' { ...register('description', { required: "Please describe it" }) } id="" />
                 <p className='text-red-400 text-xs pl-1'>{ errors.description?.message }</p>
             </div>
             <input disabled={ isLoading } type="submit" value="Post" className='p-2 rounded-md bg-blue-600 disabled:opacity-50 hover:cursor-pointer hover:saturate-200' />
