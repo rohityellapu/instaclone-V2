@@ -23,7 +23,7 @@ function Menu({ setItems }) {
             <MdOutlineExplore className='h-8 w-8' />
             <RiInstagramFill className='h-8 w-8' />
             <FiPlusSquare className='h-8 w-8' onClick={ openModal } />
-            <RiMessengerLine className='h-8 w-8' />
+
             <FaRegUserCircle className='h-8 w-8' />
             <Modal
                 isOpen={ modalIsOpen }
