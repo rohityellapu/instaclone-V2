@@ -114,7 +114,7 @@ function Home() {
 
 
                 </header>
-                <main className='w-full'>
+                <main className='w-full min-h-screen'>
                     <InfiniteScroll
                         loadMore={ fetchItems }
                         hasMore={ hasMoreItems }
